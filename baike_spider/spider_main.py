@@ -1,7 +1,7 @@
 # coding:utf-8
 import url_manager , html_outputer , html_parser , html_downloader
 
-class Spider_main(object):
+class SpiderMain(object):
     def __init__(self):
         self.urls = url_manager.UrlManager()
         self.downloader = html_downloader.HtmlDownLoader()
@@ -30,5 +30,5 @@ class Spider_main(object):
 
 if __name__ == "__main__":
     root_url = "https://baike.baidu.com/item/Python"
-    obj_spider = Spider_main()
+    obj_spider = SpiderMain()
     obj_spider.craw(root_url)
