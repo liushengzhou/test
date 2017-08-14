@@ -1,7 +1,7 @@
-#coding=utf-8
 import urllib2
 
-class HtmlDownloader(object):
+
+class HtmlDownLoader(object):
 
     def download(self,url):
         print "in html_downloader"

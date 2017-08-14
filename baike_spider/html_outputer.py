@@ -1,4 +1,3 @@
-# coding:utf-8
 class HtmlOutputer(object):
 
     def __init__(self):
@@ -10,7 +9,7 @@ class HtmlOutputer(object):
             return
         self.data.append(data)
 
-    def output_html(self):
+    def output_html(self,num):
         print 'in html_outputer def output_html'
         font = open('output.html','w')
         font.write('<html><meta charset="utf-8">')
@@ -30,7 +29,7 @@ class HtmlOutputer(object):
         font.write('</html>')
 
         font2 = open('output2.md', 'w')
-        font2.write('# 100 pices of Baidu Baike\n')
+        font2.write("# %s pices of Baidu Baike\n" % num)
 
         # ASCII
         for data in self.data:
